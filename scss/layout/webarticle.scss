@@ -1,0 +1,80 @@
+.webarticle {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(../img/sea-horse-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &-context-whatwedo-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @include tables {
+      width: 100%;
+    }
+  }
+
+  &-context-whoweare-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 15rem;
+
+    @include tables {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &-context-detail-container {
+    padding: 4rem;
+    @include tables {
+      padding: 2rem;
+    }
+  }
+
+  &-title {
+    color: nth($webarticle-color, 1);
+    font-family: Georgia, serif;
+    font-size: 32px;
+    letter-spacing: normal;
+    line-height: 4rem;
+  }
+  &-context {
+    color: nth($webarticle-color, 1);
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  &-dot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &-dot {
+    @extend.dot-structure;
+    margin: 0 15px;
+  }
+
+  &-button {
+    @extend.button-structure;
+    color: nth($webarticle-color, 2);
+    background-color: nth($webarticle-color, 1);
+    text-decoration: none;
+    // cursor: pointer;
+  }
+}

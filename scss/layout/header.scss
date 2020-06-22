@@ -1,0 +1,22 @@
+.header {
+  &-container {
+    background-color: nth($header-color, 1);
+    display: flex;
+  }
+  &-nav {
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+  &-a {
+    color: nth($header-color, 2);
+    font-size: 21px;
+    font-family: sans-serif;
+    margin: 0px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: nth($header-color, 3);
+      cursor: pointer;
+    }
+  }
+}

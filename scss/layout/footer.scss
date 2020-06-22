@@ -1,0 +1,16 @@
+.footer {
+  &-container {
+    background: nth($footer-color, 1);
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  &-copyright {
+    font-size: 16px;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: nth($footer-color, 2);
+  }
+}

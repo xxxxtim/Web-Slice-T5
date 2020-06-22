@@ -1,0 +1,68 @@
+.webfolk {
+  background: url(../img/banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 100px;
+    color: nth($webfolk-color, 1);
+    text-align: center;
+    font-family: serif;
+    @include tables {
+      padding: 80px 30px;
+    }
+    @include mobile {
+      padding: 80px 5px;
+    }
+  }
+
+  &-title-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  &-title-web {
+    font-size: 95px;
+    font-family: cursive;
+    margin: 0;
+    font-style: italic;
+    @include mobile {
+      font-size: 80px;
+    }
+  }
+
+  &-title-folk {
+    font-family: "Kaushan Script", cursive;
+  }
+
+  &-title-design {
+    font-size: 30px;
+    letter-spacing: 16px;
+    margin: 0;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  &-context {
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 5px;
+    width: 60%;
+    @include tables {
+      width: 100%;
+    }
+  }
+
+  &-dot-cotainer {
+    display: flex;
+    flex-direction: column;
+  }
+  &-dot {
+    @extend.dot-structure;
+    margin: 15px 0;
+  }
+}
